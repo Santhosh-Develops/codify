@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codify Me</title>
+</head>
+<body>
+   <h1>Codify Me</h1>
+   <textarea id="editor" rows="10" cols="50"></textarea> 
+   <br>
+   <button onclick="saveText()">Submit</button>
+   <script>
+    function saveText(){
+        const text=document.getElementById('editor').value;
+        fetch('/save',{method:'POST',headers:{'Content-type':'application/x-www-form-urlencoded'},body:`text=${encodeURIComponent(text)}`}).then(response=>{if(response.redirected){window.location.href=response.url;}}).catch(error =>console.error(error));}
+   </script>
+</body>
+</html>
