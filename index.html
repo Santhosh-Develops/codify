@@ -10,10 +10,10 @@
    <textarea id="editor" rows="10" cols="50"></textarea> 
    <br>
    <button onclick="saveText()">Submit</button>
-   <script>
+   <!-- <script>
     function saveText(){
         const text=document.getElementById('editor').value;
-        fetch('/save',{method:'POST',headers:{'Content-type':'application/x-www-form-urlencoded'},body:`text=${encodeURIComponent(text)}`}).then(response=>{if(response.redirected){window.location.href=response.url;}}).catch(error =>console.error(error));}
-   </script>
+        //fetch('/save',{method:'POST',headers:{'Content-type':'application/x-www-form-urlencoded'},body:`text=${encodeURIComponent(text)}`}).then(response=>{if(response.redirected){window.location.href=response.url;}}).catch(error =>console.error(error));}
+   </script> -->
 </body>
 </html>
