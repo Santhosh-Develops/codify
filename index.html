@@ -3,17 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codify Me</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-   <h1>Codify Me</h1>
-   <textarea id="editor" rows="10" cols="50"></textarea> 
-   <br>
-   <button onclick="saveText()">Submit</button>
-   <!-- <script>
-    function saveText(){
-        const text=document.getElementById('editor').value;
-        //fetch('/save',{method:'POST',headers:{'Content-type':'application/x-www-form-urlencoded'},body:`text=${encodeURIComponent(text)}`}).then(response=>{if(response.redirected){window.location.href=response.url;}}).catch(error =>console.error(error));}
-   </script> -->
+<header> 
+
+<div class="inputname">
+  <form action="">
+    <label for="name">Code</label>
+    <input type="text" id="name" placeholder="code name.java">
+  </form>
+</div>
+
+<div class="navbar">
+ 
+    <div class="dropdown">
+        <div class="select">
+            <span class="selected">Python</span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li class="active">Python</li>
+            <li>Java</li>
+            <li>C</li>
+        </ul>
+
+    </div>
+        
+      </div>
+    </div> 
+</div>
+</header>
+
+<br>
+<br>
+
+<div class="testcodebox">
+  <form action="" class="formbox">
+    <textarea name="subject" id="subject" placeholder="test /...."></textarea>
+    <button class="submit" type="submit"><a href=""</button>
+  </form>
+</div>
+
 </body>
 </html>
